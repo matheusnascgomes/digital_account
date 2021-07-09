@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-final Color color = Color.fromRGBO(8, 111, 176, 1);
+final Color defaultPrimaryColor = Color.fromRGBO(24, 59, 101, 1);
 
 final ThemeData theme = ThemeData(
-  primaryColor: color,
-  accentColor: color,
+  primaryColor: defaultPrimaryColor,
+  accentColor: defaultPrimaryColor,
   buttonTheme: ButtonThemeData(
-    buttonColor: color,
+    buttonColor: defaultPrimaryColor,
     textTheme: ButtonTextTheme.primary,
   ),
 );
