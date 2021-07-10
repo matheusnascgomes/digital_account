@@ -18,7 +18,7 @@ class TransferListState extends State<TransferList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Conta Digital!'),
+        title: Text('Transações'),
       ),
       body: widget._items.length == 0
           ? Center(child: Text(emptyListText))
