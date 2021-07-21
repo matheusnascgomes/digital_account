@@ -18,17 +18,17 @@ class TransferListState extends State<TransferList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Transações'),
+        title: Text('Transferências'),
       ),
       body: widget._items.length == 0
           ? Center(child: Text(emptyListText))
           : ListView.builder(
-        itemCount: widget._items.length,
-        itemBuilder: (context, index) {
-          final transfer = widget._items[index];
-          return TransferItem(transfer);
-        },
-      ),
+              itemCount: widget._items.length,
+              itemBuilder: (context, index) {
+                final transfer = widget._items[index];
+                return TransferItem(transfer);
+              },
+            ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           final Future future = Navigator.pushNamed(context, '/form');

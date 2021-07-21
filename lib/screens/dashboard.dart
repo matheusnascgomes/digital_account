@@ -24,7 +24,7 @@ class Dashboard extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0, 0, 4, 0),
-                  child: CardAction('Transações', Icons.monetization_on, '/transfers'),
+                  child: CardAction('Transações', Icons.monetization_on, '/transactions'),
                 ),
               ],
             ),
